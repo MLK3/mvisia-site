@@ -1,0 +1,627 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1">
+		<title>MVisia</title>
+        <link href='favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+		<link href="css/styles.css" rel="stylesheet">
+		<link href="css/font-awesome.css" rel="stylesheet">
+
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Carousels (Modified bxSlider) -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<script type="text/javascript" src="js/jquery.carousel-main.min.js"></script>
+		<script type="text/javascript" src="js/jquery.carousel-content.min.js"></script>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Settings -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<script type="text/javascript" src="js/home-slider-settings.js"></script>
+		<script type="text/javascript" src="js/carousel-testimonials-settings.js"></script>
+		<script type="text/javascript" src="js/carousel-clients-settings.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-30795339-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+	</head>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<!-- Body - Add "contained" to below classes for boxed layout a-->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<body class="light-bg home">
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Main Container -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div class="main-container">
+
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- Top Bar - Set "white" or "dark" below -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<div class="topbar-outer white">
+				<div class="topbar content-width">
+
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<!-- Logo -->
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<div class="table fullheight">
+						<div class="table-cell fullheight middle">
+							<div class="logo"><a href="index.html"><img alt="" src="images/topbar/logo_horizontal_transp.png" height="43px" /></a></div>
+						</div>
+					</div>
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<!-- END Logo -->
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<!-- Main Navigation -->
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<ul class="topnav">
+						<li><a href="index.html" class="current">Home</a></li>
+						<li><a href="about.html">Quem somos</a></li>
+						<li><a href="solucoes.html" class="drop">Nossas solu&ccedil;&otilde;es</a>
+							<ul>
+								<li><a href="maquina-mudas.html">M&aacute;quina Seletora de Mudas</a></li>
+								<li><a href="maquina-tomates.html">Calibradora Eletr&ocirc;nica de Tomates</a></li>
+							</ul>
+						</li>
+						<li><a href="midia.html">Na m&iacute;dia</a></li>
+						<li><a href="contact.html">Contato</a></li>
+					</ul>
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<!-- END Main Navigation -->
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<!-- Mobile Navigation -->
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<!-- Show/Hide Menu Button -->
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<a href="#" class="mobilenav-click">
+					<div class="mobilenav-button-container">
+						<div class="mobilenav-button-inner">
+							<div class="mobilenav-button"></div>
+						</div>
+					</div>
+					</a>
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<!-- END Show/Hide Menu Button -->
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<!-- Navigation Menu (Populated using jQuery) -->
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<div class="mobilenav-container">
+						<ul class="mobilenav">
+						</ul>
+					</div>
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<!-- END Navigation Menu
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<!-- END Mobile Navigation -->
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+				</div>
+			</div>
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- END Top Bar -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- Home Banner ("light" and "dark" style can be applied here) -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<div class="home-banner dark">
+
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<!-- Slides -->
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<ul class="slider-container" id="home-slider">
+
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<!-- Slide 1 (Big Title & Text) -->
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<li class="slide-outer" style="background-image: url('images/banner-tomates2-faded2.jpg');">
+						<div class="slide-inner" >
+							<div class="content-width">
+                                <div class="slide-style-1">
+                                    <!-- Title -->
+                                    <h1>Visão Computacional e Inteligência Artificial</h1>
+                                    <!-- Text -->
+                                    <p>Tecnologias inovadoras para elaborarmos as melhores soluções para o seu problema.</p>
+                                </div>
+							</div>
+						</div>
+					</li>
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<!-- END Slide 1 -->
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<!-- Slide 2 (Centered Icon & Text) -->
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<li class="slide-outer" style="background-image: url('images/banner-tomates2.jpg');">
+						<div class="slide-inner">
+							<div class="content-width">
+								<div class="slide-style-2">
+									<div class="spacer"></div>
+									<div class="spacer"></div>
+									<div class="spacer"></div>
+									<div class="spacer"></div>
+									<!-- Title -->
+                                    <a href="maquina-tomates.html"><h1>Calibradoras Eletrônicas</h1></a>
+									<!-- Text -->
+									<p>Padronização com velocidade e qualidade. Análise de cor, tamanho e defeitos por inspeção 360º.</p>
+                                    <a class="button accent" href="maquina-tomates.html"><i class="fa fa-info-circle"></i>Saiba mais</a>
+                                    <a class="button white" href="maquina-tomates.html"><i class="fa fa-video-camera"></i>Veja em ação</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<!-- END Slide 2 -->
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<!-- Slide 3 (Left Text / Right Image) -->
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<li class="slide-outer" style="background-image: url('images/banner-tomates2-faded2.jpg');">
+                        <div class="slide-inner">
+                            <div class="content-width">
+                                <div class="slide-style-3">
+                                    <!-- ~~~~~~~~~~~~~~~~~ -->
+                                    <!-- Left Column -->
+                                    <!-- ~~~~~~~~~~~~~~~~~ -->
+                                    <div class="left-column">
+                                        <!-- Title -->
+                                        <h1>Na m&iacute;dia</h1>
+                                        <!-- Text -->
+                                        <p>Confira o que estão dizendo sobre a MVisia</p>
+                                        <!-- Button -->
+                                        <a class="button accent" href="midia.html"><i class="fa fa-newspaper-o"></i>Leia mais</a>
+                                    </div>
+                                    <!-- ~~~~~~~~~~~~~~~~~ -->
+                                    <!-- END Left Column -->
+                                    <!-- ~~~~~~~~~~~~~~~~~ -->
+                                    <!-- ~~~~~~~~~~~~~~~~~ -->
+                                    <!-- Right Column -->
+                                    <!-- ~~~~~~~~~~~~~~~~~ -->
+                                    <div class="right-column">
+                                        <!-- Image -->
+                                        <a href="midia-globo-rural.html"><img alt="Globo Rural" src="images/globo-rural-logo2014.jpg" /></a>
+                                    </div>
+                                    <!-- ~~~~~~~~~~~~~~~~~ -->
+                                    <!-- END Right Column -->
+                                    <!-- ~~~~~~~~~~~~~~~~~ -->
+                                </div>
+                            </div>
+                        </div>
+					</li>
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+					<!-- END Slide 3 -->
+					<!-- ~~~~~~~~~~~~~~~~~ -->
+
+				</ul>
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<!-- END Slides -->
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<!-- Banner Navigation Bar -->
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<div class="slider-nav-container">
+					<div class="slider-nav-inner">
+						<div class="slider-nav content-width">
+
+							<!-- ~~~~~~~~~~~~~~~~~ -->
+							<!-- Slide Links -->
+							<!-- ~~~~~~~~~~~~~~~~~ -->
+							<ul id="bx-pager">
+								<li><a data-slide-index="0" href="">A MVisia</a></li>
+								<li><a data-slide-index="1" href="">Calibradoras Eletr&ocirc;nicas</a></li>
+								<li><a data-slide-index="2" href="">Na m&iacute;dia</a></li>
+							</ul>
+							<!-- ~~~~~~~~~~~~~~~~~ -->
+							<!-- END Slide Links -->
+							<!-- ~~~~~~~~~~~~~~~~~ -->
+
+							<!-- ~~~~~~~~~~~~~~~~~ -->
+							<!-- Slide Controls -->
+							<!-- ~~~~~~~~~~~~~~~~~ -->
+							<div class="slider-controls">
+								<div id="slider-pause"></div>
+								<div id="slider-prev"></div>
+								<div id="slider-next"></div>
+							</div>
+							<!-- ~~~~~~~~~~~~~~~~~ -->
+							<!-- END Slide Controls -->
+							<!-- ~~~~~~~~~~~~~~~~~ -->
+
+						</div>
+					</div>
+				</div>
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<!-- END Banner Navigation Bar -->
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			</div>
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- END Home Banner -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- CTA Bar - Set "white", "accent" or "dark" -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!--<div class="home-cta-bar-container accent">
+
+				<div class="content-width">
+					<div class="home-cta-bar">
+						<div class="text">
+							A super easy to use PSD, HTML and WordPress theme ready to serve almost all business types.
+						</div>
+						<div class="home-cta-bar-button">
+							<a class="button transparent" href="#"><i class="fa fa-shopping-cart"></i>Purchase Theme</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			-->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- END CTA Bar -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- Main Content -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<div class="main-content">
+				<div class="main-content-inner content-width">
+
+
+
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<!-- Left Aligned Icons & Text -->
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<div class="column-container">
+
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- One Third -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<div class="column-one-third">
+							<div class="icons-column">
+								<!-- Icon Backing -->
+								<a href="about.html">
+									<div class="icon-backing" style="background-color: #42BA85;">
+										<!-- Icon -->
+                                        <i class="fa fa-users"></i>
+									</div>
+								</a>
+							</div>
+                                <div class="content-column">
+                                    <!-- Title -->
+                                    <a href="about.html"><h3>Sobre a MVisia</h3></a>
+                                    <!-- Text -->
+                                    <p>Conheça a nossa empresa e o nosso time.</p>
+                                </div>
+						</div>
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- END One Third -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- One Third -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<div class="column-one-third">
+							<div class="icons-column">
+								<!-- Icon Backing -->
+								<a href="solucoes.html">
+									<div class="icon-backing" style="background-color: #42BA85;">
+										<!-- Icon -->
+										<i class="fa fa-lightbulb-o"></i>
+									</div>
+								</a>
+							</div>
+							<div class="content-column">
+								<!-- Title -->
+                                <a href="solucoes.html"><h3>Nossas soluções</h3></a>
+								<!-- Text -->
+								<p>Saiba mais sobre nossos produtos inovadores.</p>
+							</div>
+						</div>
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- END One Third -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- One Third -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<div class="column-one-third">
+							<div class="icons-column">
+								<!-- Icon Backing -->
+                                <a href="contact.html">
+                                    <div class="icon-backing" style="background-color: #42BA85;">
+                                        <!-- Icon -->
+                                        <i class="fa fa-envelope-o"></i>
+                                    </div>
+                                </a>
+							</div>
+							<div class="content-column">
+								<!-- Title -->
+                                <a href="contact.html"><h3>Entre em contato</h3></a>
+								<!-- Text -->
+								<p>Projetos diferentes? Entre em contato conosco!</p>
+							</div>
+						</div>
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- END One Third -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+					</div>
+					<div class="content-width">
+						<div class="divider"></div>
+						<h3 class="section-title">Depoimentos</h3>
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- END Title -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- Navigation (Back/Next) -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<div id="testimonials-nav" class="carousel-nav">
+							<div class="back"></div>
+							<div class="next"></div>
+						</div>
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- END Navigation (Back/Next) -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- Carousel -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<div class="carousel">
+							<ul id="testimonials-carousel" class="slider-container">
+
+								<!-- Testimonial 1 -->
+								<li>
+									<!-- Text -->
+									<div class="testimonial-text">
+										<p>"A separação da máquina seletora de mudas é perfeita!"</p>
+									</div>
+									<!-- Name -->
+									<div class="testimonial-name">
+										L. R. (São Paulo)
+									</div>
+									<!-- Company URL -->
+									<div class="testimonial-link">
+										<a href="#">Produtor de mini-Kalanchoe</a>
+									</div>
+								</li>
+
+								<!-- Testimonial 2 -->
+								<li>
+									<!-- Text -->
+									<div class="testimonial-text">
+										<p>"Estou muito satisfeito com a máquina classificadora de tomates, eu nunca vi nada igual."</p>
+									</div>
+									<!-- Name -->
+									<div class="testimonial-name">
+										R. F. L. (Minas Gerais)
+									</div>
+									<!-- Company URL -->
+									<div class="testimonial-link">
+										<a href="#">Produtor de tomates grape</a>
+									</div>
+								</li>
+
+								<!-- Testimonial 3 -->
+								<li>
+									<!-- Text -->
+									<div class="testimonial-text">
+										<p>"Após a instalação da máquina seletora de mudas, obtive um ganho de produção de 30%."</p>
+									</div>
+									<!-- Name -->
+									<div class="testimonial-name">
+										R. O. G. (São Paulo)
+									</div>
+									<!-- Company URL -->
+									<div class="testimonial-link">
+										<a href="#">Produtor de violetas</a>
+									</div>
+								</li>
+
+							</ul>
+						</div>
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- END Carousel -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					</div>
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<!-- END Left Aligned Icons & Text -->
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+				</div>
+			</div>
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- END Main Content -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- Footer Container -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<div class="footer-container">
+
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<!-- Client Logos -->
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<div class="content-width">
+					<div class="client-logos-container">
+
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- Title -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<div class="client-logos-title">
+							<span>Parceiros Estratégicos</span>
+						</div>
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- END Title -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- Navigation (Back / Next) -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<div id="clients-back"></div>
+						<div id="clients-next"></div>
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- END Navigation -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- Carousel -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<div class="">
+							<ul id="clients-carousel" class="column-container">
+
+								<li class="">
+									<div class="logo-outer">
+										<div class="logo-inner">
+											<a href="http://www.cietec.org.br" target="_blank">
+												<img alt="CIETEC" src="images/parceiros-logos/logo1.png"/>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="">
+									<div class="logo-outer">
+										<div class="logo-inner">
+											<a href="http://www.manini.com.br" target="_blank">
+												<img alt="Manini" src="images/parceiros-logos/logo2.png"/>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="">
+									<div class="logo-outer">
+										<div class="logo-inner">
+											<a href="http://usp.br" target="_blank">
+												<img alt="USP" src="images/parceiros-logos/logo3.png"/>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="">
+									<div class="logo-outer">
+										<div class="logo-inner">
+											<a href="http://www.pcs.usp.br/~laa/" target="_blank">
+												<img alt="LAA" src="images/parceiros-logos/logo4.png"/>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="">
+									<div class="logo-outer">
+										<div class="logo-inner">
+											<a href="http://www.lti.pcs.usp.br" target="_blank">
+												<img alt="LTI" src="images/parceiros-logos/logo5.png"/>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="">
+									<div class="logo-outer">
+										<div class="logo-inner">
+											<a href="http://www.ipen.br" target="_blank">
+												<img alt="ipen" src="images/parceiros-logos/logo6.png"/>
+											</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- END Carousel -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+					</div>
+				</div>
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<!-- END Client Logos -->
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- Footer Infobar -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <div class="footer-infobar">
+                    <div class="content-width">
+                        <!-- Text -->
+                        Unindo visão computacional e inteligência artificial, a MVisia traz inovação para o seu negócio!
+                    </div>
+                </div>
+
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<!-- Footer -->
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<div class="footer">
+					<div class="content-width">
+						<div class="column-container">
+
+							<div class="column-three-qtr">
+								<p>MVisia - M&aacute;quinas de Vis&atilde;o e Intelig&ecirc;ncia Artificial</p>
+							</div>
+
+							<div class="column-one-fourth" style="text-align: right; vertical-align: bottom">
+
+								<!-- Social Icons -->
+								<ul class="footer-social">
+									<li><a href="https://www.linkedin.com/company/mvisia" target="_blank"><i class="fa fa-linkedin-square"></i><div class="tooltip">LinkedIn</div></a></li>
+									<li><a href="https://www.facebook.com/pages/MVisia/359620810720148" target="_blank"><i class="fa fa-facebook"></i><div class="tooltip">Facebook</div></a></li>
+									<li><a href="https://plus.google.com/102026257047245653284/about" target="_blank"><i class="fa fa-google-plus"></i><div class="tooltip">Google+</div></a></li>
+									<li><a href="https://vimeo.com/mvisia"><i class="fa fa-vimeo-square"></i><div class="tooltip">Vimeo</div></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Footer Navigation -->
+						<div class="footer-lower-container">
+
+							<ul class="footer-lower">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">Quem somos</a></li>
+								<li><a href="solucoes.html" class="drop">Nossas solu&ccedil;&otilde;es</a></li>
+								<li><a href="midia.html">Na m&iacute;dia</a></li>
+								<li><a href="contact.html">Contato</a></li>
+							</ul>
+
+							<div class="footer-copyright">
+								Copyright &copy; 2013 Artivity. Todos os direitos reservados.
+							</div>
+						</div>
+						<!-- END Footer Navigation -->
+
+						<!-- Top of Page Link -->
+						<a class="top-of-page-link" href="#"><i class="fa fa-chevron-up"></i></a>
+
+					</div>
+				</div>
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<!-- END Footer -->
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			</div>
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- END Footer Container -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		</div>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- END Main Container -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+	</body>
+</html>
