@@ -1,12 +1,2 @@
-.idea/.name
-.idea/2015.iml
-.idea/encodings.xml
-.idea/inspectionProfiles/profiles_settings.xml
-.idea/inspectionProfiles/Project_Default.xml
-.idea/jsLibraryMappings.xml
-.idea/dictionaries/MLK.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/scopes/scope_settings.xml
-.idea/vcs.xml
-.idea/workspace.xml
+.idea/
+images/tmp/
