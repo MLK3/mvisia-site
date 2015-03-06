@@ -3,16 +3,49 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1">
-		<title>MVisia - Contato</title>
-		<link href='favicon.ico' rel='shortcut icon' type='image/x-icon'/>
-        <link href="css/styles.css" rel="stylesheet">
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Page Title -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<title>MVisia - Sistemas de Processamento de Imagem</title>
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- CSS -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <link href='favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+		<link href="css/styles.css" rel="stylesheet">
 		<link href="css/font-awesome.css" rel="stylesheet">
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- JavaScript -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Main jQuery Files -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- General Site Configuration -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		<script type="text/javascript" src="js/common.js"></script>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		<!-- Carousels (Modified bxSlider) -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		<script type="text/javascript" src="js/jquery.carousel-content.min.js"></script>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		<!-- Settings -->
-		<script type="text/javascript" src="js/carousel-clients-settings.js"></script>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<script type="text/javascript" src="js/portfolio-blog-slider-settings.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				// All tabs same height (tallest)
+				$('.tabs-content').css('height', $('.tabs-content').css('height'));
+				$('#video-frame').height($('#video-frame').width()*0.75);
+			});
+			$(window).resize(function() {
+				$('.tabs-content').css('height', "auto");
+				$('.tabs-content').css('height', $('.tabs-content').css('height'));
+				$('#video-frame').height($('#video-frame').width()*0.75);
+			});
+		</script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,6 +55,9 @@
             ga('create', 'UA-30795339-1', 'auto');
             ga('send', 'pageview');
         </script>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- END JavaScript -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	</head>
 
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -51,7 +87,7 @@
 					<ul class="topnav">
 						<li><a href="index.html">Home</a></li>
 						<li><a href="about.html">Quem somos</a></li>
-						<li><a href="solucoes.html" class="drop">Nossas solu&ccedil;&otilde;es</a>
+						<li><a href="solucoes.html" class="drop current">Nossas solu&ccedil;&otilde;es</a>
                             <ul>
                                 <li><a href="maquina-mudas.html">M&aacute;quina Seletora de Mudas</a></li>
                                 <li><a href="maquina-tomates.html">Calibradora Eletr&ocirc;nica de Tomates</a></li>
@@ -59,7 +95,7 @@
                             </ul>
 						</li>
 						<li><a href="midia.html">Na m&iacute;dia</a></li>
-						<li><a href="contact.html" class="current">Contato</a></li>
+						<li><a href="contact.html">Contato</a></li>
 					</ul>
 
 					<!-- Mobile Navigation -->
@@ -89,111 +125,124 @@
 			<div class="main-content">
 				<div class="main-content-inner content-width">
 
-					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-					<!-- Page Title -->
-					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-					<h1>Contato</h1>
-					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-					<!-- END Title -->
-					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<div class="relative">
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- Page Title -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<h1>Sistemas de Processamento de Imagem</h1>
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- END Title -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					</div>
 
 					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-					<!-- Intro -->
-					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-					<p>Tem algum projeto diferente, outra necessidade ou qualquer dúvida? Entre em contato conosco!</p>
-					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-					<!-- END Intro -->
-					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-					<!-- Spacer x 2 -->
-					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-					<div class="spacer"></div>
-					<div class="spacer"></div>
-					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-					<!-- END Spacer x 2 -->
-					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-					<!-- Left Aligned Icons & Text (Vertically centered) -->
+					<!-- Image / Details (3 Quater / 1 Fourth) -->
 					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 					<div class="column-container">
 
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-						<!-- One Third -->
+						<!-- Image Column (Place images in "#portfolio-blog-slider" for multiple image slider) -->
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-						<div class="column-one-third">
-							<div class="icons-column vertical-center">
-								<!-- Icon Backing -->
-								<div class="icon-backing">
-									<!-- Icon -->
-									<i class="fa fa-phone"></i>
+						<div class="column-three-qtr">
+							<div id="portfolio-blog-slider-container">
+
+								<div id="portfolio-blog-slider">
+									<!-- ~~~~~~~~~~~~~~~~~ -->
+									<!-- Actual Images -->
+									<!-- ~~~~~~~~~~~~~~~~~ -->
+                                    <img alt="Reconhecimento facial" src="images/sistemas-visao_02.jpg" class="fullwidth"/>
+									<!-- ~~~~~~~~~~~~~~~~~ -->
+									<!-- END Actual Images -->
+									<!-- ~~~~~~~~~~~~~~~~~ -->
 								</div>
-							</div>
-							<div class="content-column vertical-center">
-								<!-- Title -->
-								<h3 class="no-margin">Telefone</h3>
-								<!-- Text -->
-								<p>(11) 4116-0987</p>
+
+								<!-- ~~~~~~~~~~~~~~~~~ -->
+								<!-- Slide Controls -->
+								<!-- ~~~~~~~~~~~~~~~~~ -->
+								<div class="portfolio-blog-slider-controls">
+									<div id="portfolio-blog-slider-prev"></div>
+									<div id="portfolio-blog-slider-next"></div>
+								</div>
+								<!-- ~~~~~~~~~~~~~~~~~ -->
+								<!-- END Slide Controls -->
+								<!-- ~~~~~~~~~~~~~~~~~ -->
+
 							</div>
 						</div>
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-						<!-- END One Third -->
+						<!-- END Image Column -->
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-						<!-- One Third -->
+						<!-- Details Column -->
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-						<div class="column-one-third">
-							<div class="icons-column">
-								<!-- Icon Backing -->
-								<div class="icon-backing">
-									<!-- Icon -->
-									<i class="fa fa-envelope"></i>
-								</div>
-							</div>
-							<div class="content-column">
-								<!-- Title -->
-								<h3 class="no-margin">Email</h3>
-								<!-- Text -->
-								<p><a href="mailto:contato@mvisia.com.br">contato@mvisia.com.br</a></p>
-							</div>
+						<div class="column-one-fourth portfolio-details">
+							<!-- Details -->
+							<p>A MVisia conta com especialistas de processamento de imagens tornando possível construir soluções para as mais diversas aplicações:</p>
+							<ul class="arrow-list">
+								<li>Reconhecimento facial</li>
+								<li>Controle de processos industriais</li>
+								<li>Identificação de peças defeituosos</li>
+								<li>Interpretação de imagens aeroespaciais</li>
+								<li>E muitas outras!</li>
+							</ul>
 						</div>
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-						<!-- END One Third -->
-						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-						<!-- One Third -->
-						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-						<div class="column-one-third">
-							<div class="icons-column ">
-								<!-- Icon Backing -->
-								<div class="icon-backing">
-									<!-- Icon -->
-									<i class="fa fa-map-marker"></i>
-								</div>
-							</div>
-							<div class="content-column vertical-center">
-								<!-- Title -->
-								<h3 class="no-margin">Endere&ccedil;o</h3>
-								<!-- Text -->
-								<p>Av. Prof. Lineu Prestes, 2242, CIETEC - Sala 205 - São Paulo/SP - 05508-000</p>
-							</div>
-						</div>
-						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-						<!-- END One Third -->
+						<!-- END Details Column -->
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 					</div>
 					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-					<!-- END Left Aligned Icons & Text -->
+					<!-- END Image / Details -->
 					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-                    <div class="spacer"></div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29258.458831938984!2d-46.73309043644858!3d-23.557402355627367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce566d5b721269%3A0x2702355c13db856c!2sMVisia!5e0!3m2!1spt-BR!2sbr!4v1423598617879" width="100%" height="300" frameborder="0" style="border:0"></iframe>
-					<div class="spacer"></div>
-                    <div class="spacer"></div>
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<!-- Divider -->
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<div class="divider"></div>
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<!-- END Divider -->
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<!-- Image / Details (3 Quater / 1 Fourth) -->
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<div class="column-container">
+
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- Details Column -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<div class="column-one-half portfolio-details">
+							<!-- Details -->
+							<p>A MVisia realiza também projetos sob demanda para atender as mais diversas necessidades de seus clientes.</p>
+                            <p>Qualquer problema de controle de qualidade, classificação, identificação que seja possível através de uma inspeção visual, podemos ajudar a resolver.</p>
+							<p>Utilizamos técnicas de visão computacional e inteligência artificial para tornar esses processos mais precisos e eficientes.</p>
+							<p>Se você tem alguma demanda ou ideia de projeto diferente, entre em contato conosco!</p>
+                            <a class="button accent" href="contact.html"><i class="fa fa-envelope"></i>Contato</a>
+						</div>
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- END Details Column -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- Image Column (Place images in "#portfolio-blog-slider" for multiple image slider) -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<div class="column-one-half">
+							<div>
+                                <img alt="Reconhecimento facial" src="images/facial-recognition.jpg" class="fullwidth"/>
+							</div>
+						</div>
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<!-- END Image Column -->
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+					</div>
+
+					<div class="divider"></div>
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<!-- END Image / Details -->
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
 				</div>
 			</div>
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
